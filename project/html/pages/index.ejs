@@ -6,18 +6,44 @@
 <body>
   <!-- the classes 'page-header' and 'btn btn-dark' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
+  
   <div class="page-header">
-
+    <head>
+      <% include ../helpers/navbar %>
+  </head>
   
     <h1>Wishnu's Website</h1>
   </div>
+  <div class="page-container">
+    <div class="content-wraper"> 
+      <p>Click on the button for a surprise.</p>
 
-  <p>Click on the button for a surprise.</p>
+      <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
+      <div id="image"></div>
+    </div>
+    
+      
+   
+</div>
 
-  <div id="image"></div>
+</div>
   
 </body>
+<footer class="bg-footer">
+    
+  <div>
+    <p>
+      Footer
+    </p>
+
+  </div>
+
+
+
+
+</footer>
+
+
 
 </html>

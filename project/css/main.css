@@ -1,13 +1,15 @@
 
 body {
-  font-family: Arial, serif;
+  font-family: Arial, serif, Inter;
   text-align: center;
   color: #343a40;
   font-size: 22px;
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: ''Poppins', sans-serif';
   font-weight: 700;
   margin-top: 40px;
   font-size: 48px;
@@ -22,13 +24,45 @@ button {
 }
 
 .page-header {
-  background-color: #00bda5;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  background-color: #195cd8;
+  padding: 1rem 0.5rem 2rem 0.5rem;
   color: #ffffff;
 }
 
 #image img {
   height: 200px;
   margin-top: 60px;
+}
+
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -100px;
+}
+
+a.nav-link{
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+.page-container {
+  position: relative;
+
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.bg-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+           /* Footer height */
+  background-color: #195cd8;
+  color: #ffff;
 }
